@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.header .logo {
+  margin: 0 400px 0 40px;
+}
+
+.header .search-bar {
+  width: 500px;
+  height: 50px;
+  margin: 0 0;
+  padding: 8px;
+  border-radius: 50px 0px 0px 50px;
+  border: 1;
+  border-color: #202020;
+}
+
+.header .search-button {
+  position: relative;
+  width: 90px;
+  height: 50px;
+  border: 1;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.header .search-button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+
+.header .video-button {
+  margin-left: 350px;
+  background-color: transparent;
+  border: none;
+}
+
+.header .notification-button {
+  margin-left: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.header .profile-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+}
+
+.header .profile-button {
+  background-color: transparent;
+  border: none;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.header .video-button {
+  cursor: pointer;
+}
+
+.header .notification-button {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.video-section {
+  flex: 3;
+}
+
+.video-player img {
+  width: 95%;
+  margin-left: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-info {
+  margin-top: 10px;
+  margin-left: 30px;
+  color: #202020;
+}
+
+.video-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.video-description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.channel-info {
+  display: inline-flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.channel-info img {
+  margin-left: 30px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+}
+
+.channel-info .text-channel h3 {
+  margin: 0 0 0 10px;
+  color: #000000;
+}
+
+.channel-info .text-channel p {
+  margin: 0 0 0 10px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.action-channel {
+  display: inline-flex;
+  margin-top: 10px;
+  align-items: center;
+  ;
+}
+
+#button-subscribe {
+  margin-left: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#button-like {
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#button-deslike {
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#button-share {
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#button-download{
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.action-channel p {
+  color: #000000;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.dados-videos{
+  margin: 30px 0px 0px 30px;
+}
+
+.dados-videos #dados-view{
+  color: #000000;
+  font-weight: bold;
+}
+
+.dados-videos #description-video{
+  width: 50%;
+  margin-top: 15px;
+  color: #666;
+}
+
+
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommended-videos a {
+  
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.recommended-videos a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #202020;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+}
+
+/*______________________________________________________________________*/
+
+
+.video-item {
+  list-style: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.video-item a {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-item:hover {
+  background-color: #f1f1f1;
+}
+
+.video-item img {
+  width: 200px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.video-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.video-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.video-item a:focus {
+  outline: 2px solid #0077ff;
+  outline-offset: 4px;
+}
+
